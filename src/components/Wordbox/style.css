@@ -17,3 +17,7 @@
   background-color: #e64747;
   color: white;
 }
+
+.notActive {
+  background-color: purple;
+}
