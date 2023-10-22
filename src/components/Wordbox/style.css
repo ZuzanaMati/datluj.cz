@@ -19,5 +19,11 @@
 }
 
 .notActive {
-  background-color: purple;
+  background-color: #8fb9358a;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.active {
+  border: 3px solid green;
+  font-size: 25px
 }

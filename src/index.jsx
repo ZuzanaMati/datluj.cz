@@ -1,16 +1,32 @@
 import { createRoot } from 'react-dom/client';
 import Stage from './components/Stage';
 import './style.css';
+import { RouterProvider, createBrowserRouter, Link } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage';
 
 const App = () => {
   return (
     <div className="container">
       <h1>Datlování</h1>
-      <Stage />
+      <nav>
+        <Link to="/datlovani">Začít hru</Link>
+      </nav>
     </div>
   );
 };
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/datlovani",
+    element: <Stage />
+  }
+])
+
 createRoot(
   document.querySelector('#app'),
-).render(<App />);
+).render(<RouterProvider router={router} />);

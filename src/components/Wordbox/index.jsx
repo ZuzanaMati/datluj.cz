@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 
-const Wordbox = ({ word, onFinish, active, onMistake, firstWord }) => {
+const Wordbox = ({ word, onFinish, active, onMistake }) => {
   const [lettersLeft, setLettersLeft] = useState(word);
   const [mistake, setMistake] = useState(false)
 
@@ -28,7 +28,7 @@ const Wordbox = ({ word, onFinish, active, onMistake, firstWord }) => {
   }, [lettersLeft, active, onMistake])
 
   return (
-    <div className={mistake ? "wordbox wordbox--mistake" : "wordbox"}>{lettersLeft}</div>
+    <div className={[mistake ? "wordbox wordbox--mistake" : "wordbox" , active ? "wordbox active" : "wordbox notActive"].filter(Boolean).join(" ")}>{lettersLeft}</div>
   );
 };
 
