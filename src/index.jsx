@@ -3,6 +3,7 @@ import Stage from './components/Stage';
 import './style.css';
 import { RouterProvider, createBrowserRouter, Link } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
+import Modal from 'react-modal';
 
 const App = () => {
   return (
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
     element: <Stage />
   }
 ])
+
+Modal.setAppElement('#app')
 
 createRoot(
   document.querySelector('#app'),
