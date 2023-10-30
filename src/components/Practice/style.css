@@ -1,0 +1,68 @@
+.practice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #efefef;
+    border-radius: 8px;
+  }
+
+  .practice_score {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  
+  .practice__mistakes {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .practice__correct {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .practice__words {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px
+  }
+
+  h1 {
+    margin: 11px 0 11px 0 auto;
+  }
+  
+  .practice_links a {
+    font-size: 15px;
+    padding: 9px;
+    margin-top: 0
+  }
+
+  .button-finish {
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid rgb(57, 57, 57);
+    max-width: 30%;
+    align-self: center;
+  }
+
+  .button-finish:hover {
+    background-color: hsl(0, 0%, 80%);
+  }
+
+  .modal_link {
+    font-size: 15px;
+    text-align: center;
+    background-color: hsl(0, 0%, 85%);
+  }
+
+  .modal_h2_practice {
+    margin-top: 0;
+  }
+
+  

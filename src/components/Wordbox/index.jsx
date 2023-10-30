@@ -25,7 +25,7 @@ const Wordbox = ({ word, onFinish, active, onMistake }) => {
       document.addEventListener("keyup", handleKeyUp);
     }
     return () => document.removeEventListener("keyup", handleKeyUp)
-  }, [lettersLeft, active, onMistake])
+  }, [lettersLeft, active, onMistake, onFinish])
 
   return (
     <div className={[mistake ? "wordbox wordbox--mistake" : "wordbox" , active ? "wordbox active" : "wordbox notActive"].filter(Boolean).join(" ")}>{lettersLeft}</div>

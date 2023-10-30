@@ -2,16 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80%;
-  padding: 32px;
-  margin: 32px auto;
   background-color: #efefef;
   border-radius: 8px;
 }
 
-.stage__mistakes {
+.stage_score {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.stage__mistakes,
+.stage__wordcount,
+.count {
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 20px;
 }
 
 .stage__words {
@@ -19,4 +24,106 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 20px
+}
+
+h1 {
+  margin: 11px 0 11px 0 auto;
+}
+
+.stage_links a {
+  font-size: 15px;
+  padding: 9px;
+  margin-top: 0
+}
+
+.button-finish {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  padding: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid rgb(57, 57, 57);
+  max-width: 30%;
+  align-self: center;
+}
+
+.button-finish:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.button-modal {
+  background-color: hsl(0, 0%, 84%);
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 2px solid rgb(246, 172, 224);
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button-modal:hover {
+  background-color: hsl(0, 0%, 75%);
+  cursor: pointer;
+}
+
+.modal_h2_stage {
+  margin-top: 0;
+}
+
+.modal_link_stage {
+  font-size: 13px;
+  text-align: center;
+  background-color: hsl(0, 0%, 85%);
+  margin: 5px 0 5px 0;
+  padding: 5px
+}
+
+.modal_h3_stage {
+  margin-top: 0;
+}
+
+.modal_h3_stage_mistakeword {
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.modal_stage_form {
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_stage_label {
+font-weight: bold;
+font-size: 20px;
+margin: 0 0 15px 0;
+}
+
+.button-modal-stage {
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  background-color: hsl(0, 0%, 85%);
+  color: rgb(57, 57, 57);
+  padding: 10px;
+  border: 2px solid rgb(246, 172, 224);
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button-modal-stage:hover {
+  background-color: hsl(0, 0%, 80%);
+  cursor: pointer;
+}
+
+#player {
+font-size: 20px;
+margin-left: 10px
+}
+
+.buttons-stage {
+  display: flex;
+  justify-content: space-between;
 }

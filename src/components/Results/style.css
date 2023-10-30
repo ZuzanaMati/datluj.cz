@@ -1,0 +1,31 @@
+.time {
+  padding: 8px;
+  border: 2px solid rgb(246, 172, 224);
+  border-radius: 8px
+
+}
+
+
+.player {
+  display: flex;
+  padding: 10px;
+  background-color: #efefef;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  }
+
+  .score_li {
+    list-style-type: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    padding: 0;
+  }
+
+  .no_player {
+    margin: 20px;
+    font-size: 20px;
+  }
