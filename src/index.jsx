@@ -13,15 +13,14 @@ import StartPage from "./components/FrontPage";
 const App = () => {
   return (
     <>
-    <div className="container">
-      <main>
-      <Outlet />
-      </main>
-      <footer>
-      <p className="footer">Zuzana Matiašková</p>
-    </footer>
-    </div>
-    
+      <div className="container">
+        <main>
+          <Outlet />
+        </main>
+        <footer>
+        <p className="footer">Zuzana Matiašková</p>
+      </footer>
+      </div>
     </>
   );
 };
@@ -34,15 +33,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-    element: <StartPage />,
+        element: <StartPage />,
       },
       {
         path: "/datlovani",
-    element: <Stage />,
+        element: <Stage />,
       },
       {
         path: "/trenink",
-    element: <Practice />,
+        element: <Practice />,
       },
       {
         path: "/results",

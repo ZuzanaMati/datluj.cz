@@ -100,9 +100,9 @@ const Practice = () => {
           {finishedWords
             .filter((word) => word.mistake !== 0)
             .map((item) => (
-              <div className="modal_mistakes_in_word"key={item.word}>
+              <li className="modal_mistakes_in_word"key={item.word}>
                 Počet chyb: {item.mistake} ve slově: {item.word}
-              </div>
+              </li>
             ))}
           <Link className="modal_link" to="/">Úvodní stránka</Link>
         </MyModal>

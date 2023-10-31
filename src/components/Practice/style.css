@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: #efefef;
     border-radius: 8px;
+    height: 100%;
   }
 
   .practice_score {
@@ -63,6 +64,10 @@
 
   .modal_h2_practice {
     margin-top: 0;
+  }
+
+  .modal_mistakes_in_word {
+    margin: 10px 0 15px 0;
   }
 
   
